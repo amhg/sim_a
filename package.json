@@ -1,0 +1,22 @@
+{
+  "name": "sim",
+  "version": "1.0.0",
+  "description": "sim app",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile:sass": "sass scss/styles.scss public/css/genie/style.css",
+    "compile:scss": "sass --no-source-map scss:public/css",
+    "sass:build": "sass --no-source-map scss:css",
+    "sass:watch": "sass --no-source-map --watch scss:css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.1",
+    "bootstrap": "^5.3.3",
+    "sass": "^1.77.6"
+  }
+}
