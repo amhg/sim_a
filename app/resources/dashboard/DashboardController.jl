@@ -33,6 +33,7 @@ using DataFrames
 
     println(completed_todos)
 
+    #inactive_users
     incompleted_todos = Users.search(; activo = false, startdate = filter_startdate, enddate = filter_enddate)
  
     println(incompleted_todos)
@@ -42,7 +43,7 @@ using DataFrames
 
     #total_completed = completed_todos[!,:todos_duration]
 
-  #tolal_active
+  #tolal_active         #active_users      
   total_completed = sum(completed_todos[!,:users_activo])
 
   #tolal_inactive
@@ -51,7 +52,7 @@ using DataFrames
   #total_time_completed = sum(completed_todos[!,:total_time]) / 60 |> round
   #total_time_incompleted = sum(incompleted_todos[!,:total_time]) / 60 |> round
 
-  
+  #=
   todos_by_status_number = [
     PlotData(
       x = completed_todos[!,:users_fecha],
@@ -69,6 +70,7 @@ using DataFrames
       plot = StipplePlotly.Charts.PLOT_TYPE_SCATTER
     ),
   ]
+    =#
 
 
   #=

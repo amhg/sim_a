@@ -9,12 +9,12 @@ container([
   # date filters row
   row([
     cell(class="col-6", [
-      textfield("Start date", :filter_startdate, clearable = true, filled = true, [
-        icon(name = "event", class = "cursor-pointer", style = "height: 100%;", [
-          popup_proxy(cover = true, [datepicker(:filter_startdate, mask = "YYYY-MM-DD")])
-        ])
+    textfield("Start date", :filter_startdate, clearable = true, filled = true, [
+      icon(name = "event", class = "cursor-pointer", style = "height: 100%;", [
+        popup_proxy(cover = true, [datepicker(:filter_startdate, mask = "YYYY-MM-DD")])
       ])
     ])
+  ])
 
     cell(class="col-6", [
       textfield("End date", :filter_enddate, clearable = true, filled = true, [

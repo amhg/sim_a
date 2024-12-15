@@ -36,10 +36,7 @@ function search(; activo = false, startdate = today() - Month(1), enddate = toda
   println(filters)
 
   DataFrame(User, SQLQuery(
-    columns = SQLColumns(User, (
-      #total_time = SQLColumn("SUM(duration) AS total_time", raw = true),
-      #total_todos = SQLColumn("COUNT(*) AS total_todos", raw = true),
-    )),
+    columns = SQLColumns(User),
     where = filters,
     #group = group,
     order = ["fecha ASC", "categoria ASC"],
