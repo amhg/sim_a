@@ -14,7 +14,7 @@
   
   </head>
   <body>
-    <!-- Navigation -->
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg sticky-top navbar-light">
     <div class="container">
       <a class="navbar-brand" href="/">
@@ -48,7 +48,9 @@
           <li class="nav-item">
             <a
               class="nav-link btn btn-outline-secondary px-4 mx-4"
-              href="#acceso"
+              href="#"
+              data-toggle="modal"
+              data-target="#exampleModal"
               >Acceso</a
             >
           </li>
@@ -56,11 +58,12 @@
       </div>
     </div>
     </nav>
-    
+
       <%
       @yield
     %>
 
+    <!--
     <footer class="footer bg-light py-6">
       <div class="container">
         <div class="row">
@@ -114,6 +117,35 @@
         </div>
       </div>
     </footer>
+    -->
+
+          <!-- Button trigger modal -->
+       <!--
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+  -->
+
+  <!-- Modal -->
+  <div class="modal fade exampleModal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
     
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/cash-dom@8.1.1/dist/cash.min.js"></script>

@@ -3,8 +3,14 @@ module UsersController
 using Sim.Users
 using Genie.Renderers, Genie.Renderers.Html
 
+using GenieAuthentication
+using Sim.AuthenticationController
+using Sim
+
 function index()
-html(:users, :index; users = all(User))  
+    #authenticated!()
+        
+    html(:users, :index; users = all(User))  
 end
 
 end

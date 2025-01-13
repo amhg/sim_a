@@ -1,0 +1,69 @@
+<div class="container">
+  <div class="row justify-content-center">
+      <div class="col-md-4">
+          <div class="card shadow-lg mt-5">
+              <div class="card-header text-bg-primary">Login to continue</div>
+              <div class="card-body">
+                  <form>
+                      <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="user_name" placeholder="john" autofocus>
+                          <label for="user_name">Username</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                          <input type="password" class="form-control" id="pass_word" placeholder="****">
+                          <label for="pass_word">Password</label>
+                      </div>
+                      <div class="form-check mb-3">
+                          <input type="checkbox" class="form-check-input" form="remember_me">
+                          <label for="remember_me" class="form-check-label">Remember me</label>
+                      </div>
+                      <div class="d-grid">
+                          <button class="btn btn-success" type="submit">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+                                  <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                                </svg>
+                              Login to continue
+                          </button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!--
+<h1 class="display-3">Login</h1>
+
+<div class="bs-callout bs-callout-primary">
+  <p>
+    Please authenticate in order to access the information.
+  </p>
+</div>
+
+<span>$(output_flash())</span>
+
+<form method="POST" action="$(linkto(:login))" class="" enctype="multipart/form-data">
+  <div class="form-group">
+    <label _for="auth_username">Username</label>
+    <input type="text" id="auth_username" name="username" class="form-control" placeholder="User" />
+  </div>
+
+  <div class="form-group">
+    <label _for="auth_password">Password</label>
+    <input type="password" id="auth_password" name="password" class="form-control" placeholder="Password" />
+  </div>
+
+  <input type="submit" value="Login" class="btn btn-primary" />
+</form>
+-->
+
+<!-- Uncomment to enable registration
+<div class="bs-callout bs-callout-primary">
+  <p>
+    Not registered yet? <a href="$(linkto(:register))">Register</a>
+  </p>
+</div>
+Uncomment to enable registration -->
