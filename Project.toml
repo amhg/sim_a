@@ -1,16 +1,1 @@
-name = "Sim"
-uuid = "fbb19203-29f5-41a5-9502-5b11b514a13b"
-authors = ["ANDREA HERNANDEZ GARCIA <andrea.hernandez@mercedes-benz.com>"]
-version = "0.1.0"
-
-[deps]
-DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
-Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
-Genie = "c43c736e-a2d1-11e8-161f-af95117fbd1e"
-GenieAuthentication = "e115e502-7e3a-11e9-29b2-aba8be6c6778"
-GenieFramework = "a59fdf5c-6bf0-4f5d-949c-a137c9e2f353"
-Inflector = "6d011eab-0732-4556-8808-e463c76bf3b6"
-Logging = "56ddb016-857b-54e1-b83d-db4d58db5568"
-MySQL = "39abe10b-433b-5dbd-92d4-e302a9df00cd"
-SearchLight = "340e8cb6-72eb-11e8-37ce-c97ebeb32050"
-SearchLightMySQL = "1297d576-4826-11ea-035e-9995c721bad1"
+"
